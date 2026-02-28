@@ -137,7 +137,7 @@ export default function LandingPage() {
                          bg-primary/10 border border-primary/20 text-primary text-xs font-medium mb-8"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-              v0.1.2 — Now on npm
+              v4 — Now on npm
             </motion.div>
 
             {/* Heading */}
@@ -319,7 +319,7 @@ export default function LandingPage() {
       <footer className="border-t border-border py-8">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
-            tiktiktoast v0.1.2 — Zero dependencies, ~5KB gzipped
+            tiktiktoast v0.1.4 — Zero dependencies, ~5KB gzipped
           </p>
           <div className="flex items-center gap-4">
             <a href="https://www.npmjs.com/package/tiktiktoast" target="_blank" rel="noopener noreferrer"
