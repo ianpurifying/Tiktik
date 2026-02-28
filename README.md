@@ -1,8 +1,8 @@
 <p align="center">
-  <h1 align="center">tiktiktoast 🔔</h1>
+  <h1 align="center">TikTiktoast 🔔</h1>
   <p align="center">
     <strong>Dynamic Island–style toast notifications for the web.</strong><br/>
-    Zero dependencies · SSR-safe · Accessible · ~7KB gzipped
+    Zero dependencies · SSR-safe · Accessible · ~6KB gzipped
   </p>
 </p>
 
