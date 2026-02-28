@@ -5,8 +5,7 @@ const navigation = [
   {
     title: 'Getting Started',
     items: [
-      { name: 'Installation', path: '/docs' },
-      { name: 'Quick Start', path: '/docs/getting-started' },
+      { name: 'Installation', path: '/docs' }
     ],
   },
   {
