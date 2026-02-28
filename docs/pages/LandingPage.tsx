@@ -137,7 +137,7 @@ export default function LandingPage() {
                          bg-primary/10 border border-primary/20 text-primary text-xs font-medium mb-8"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-              v0.1.0 — Now on npm
+              v0.1.2 — Now on npm
             </motion.div>
 
             {/* Heading */}
