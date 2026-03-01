@@ -102,7 +102,7 @@ export default function DocsLayout() {
 
             <Link to="/" className="flex items-center gap-2 group">
               <motion.img
-                src="/docs/files/logo.svg"
+                src="/logo.svg"
                 alt="tiktiktoast logo"
                 className="w-8 h-8 drop-shadow-md"
                 whileHover={{ scale: 1.1, rotate: 5 }}

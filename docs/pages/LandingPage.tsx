@@ -95,7 +95,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
             <motion.img
-              src="/docs/files/logo.svg"
+              src="/logo.svg"
               alt="tiktiktoast logo"
               className="w-8 h-8 drop-shadow-md"
               whileHover={{ scale: 1.1, rotate: 5 }}
@@ -133,7 +133,6 @@ export default function LandingPage() {
         <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-20">
           <div className="text-center max-w-3xl mx-auto">
             
-
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
