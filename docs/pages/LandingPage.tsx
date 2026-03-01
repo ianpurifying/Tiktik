@@ -218,29 +218,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Video Demo Placeholder */}
-      <section className="max-w-4xl mx-auto px-6 pb-20">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="rounded-2xl border border-border bg-surface-raised overflow-hidden"
-        >
-          <div className="aspect-video flex items-center justify-center bg-gradient-to-br from-surface-raised to-surface-overlay">
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <p className="text-text-secondary text-sm font-medium">Insert demo video here</p>
-              <p className="text-text-muted text-xs mt-1">Showcase your favorite toast interactions</p>
-            </div>
-          </div>
-        </motion.div>
-      </section>
-
       {/* NPM Badges */}
       <section className="max-w-4xl mx-auto px-6 pb-12">
         <div className="flex flex-wrap items-center justify-center gap-3">
