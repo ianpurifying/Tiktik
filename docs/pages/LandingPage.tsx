@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import { Tiktik } from 'tiktiktoast';
+import { Navbar } from '../components/Navbar';
 
 function FloatingToast({ delay, x, y, rotation, type, message }: {
   delay: number; x: number; y: number; rotation: number;
@@ -45,7 +46,7 @@ function FloatingToast({ delay, x, y, rotation, type, message }: {
         }}
       >
         <span className="text-sm" style={{ color: c.accent }}>{icons[type]}</span>
-        <span className="text-sm font-medium text-white/80 whitespace-nowrap">{message}</span>
+        <span className="text-sm font-medium text-text-primary/80 whitespace-nowrap">{message}</span>
       </div>
     </motion.div>
   );
@@ -90,37 +91,7 @@ const features = [
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-surface">
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 backdrop-blur-xl bg-surface/80 border-b border-border">
-        <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 group">
-            <motion.img
-              src="/logo.svg"
-              alt="tiktiktoast logo"
-              className="w-8 h-8 drop-shadow-md"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-            />
-            <span className="text-lg font-bold text-text-primary tracking-tight group-hover:text-primary transition-colors">
-              TikTiktoast
-            </span>
-          </Link>
-          <div className="flex items-center gap-6">
-            <Link to="/docs" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-              Docs
-            </Link>
-            <a
-              href="https://www.npmjs.com/package/tiktiktoast"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-text-secondary hover:text-text-primary transition-colors"
-            >
-              npm
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden">
@@ -130,7 +101,7 @@ export default function LandingPage() {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-info/8 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-20">
+        <div className="relative max-w-[1400px] mx-auto px-6 pt-24 pb-20">
           <div className="text-center max-w-3xl mx-auto">
             
             {/* Badge */}
@@ -152,7 +123,7 @@ export default function LandingPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
             >
-              <span className="bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-b from-text-primary to-text-secondary bg-clip-text text-transparent">
                 Beautiful toasts,
               </span>
               <br />
@@ -219,7 +190,7 @@ export default function LandingPage() {
       </section>
 
       {/* Features Grid */}
-      <section className="max-w-5xl mx-auto px-6 pb-24">
+      <section className="max-w-[1400px] mx-auto px-6 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -262,7 +233,7 @@ export default function LandingPage() {
       </section>
 
       {/* Quick Start */}
-      <section className="max-w-3xl mx-auto px-6 pb-24">
+      <section className="max-w-[1400px] mx-auto px-6 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -296,9 +267,8 @@ export default function LandingPage() {
         </motion.div>
       </section>
 
-      {/* Footer */}
       <footer className="border-t border-border py-8">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-[1400px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
             tiktiktoast v0.1.4 — Zero dependencies, ~5KB gzipped
           </p>
