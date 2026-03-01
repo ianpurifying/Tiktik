@@ -93,8 +93,18 @@ export default function LandingPage() {
       {/* Nav */}
       <nav className="sticky top-0 z-50 backdrop-blur-xl bg-surface/80 border-b border-border">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link to="/" className="text-lg font-bold text-text-primary tracking-tight">
-            TikTiktoast<span className="text-primary">.</span>
+          <Link to="/" className="flex items-center gap-2 group">
+            <motion.img
+              src="/docs/files/logo.svg"
+              alt="tiktiktoast logo"
+              className="w-8 h-8 drop-shadow-md"
+              whileHover={{ scale: 1.1, rotate: 5 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+            />
+            <span className="text-lg font-bold text-text-primary tracking-tight group-hover:text-primary transition-colors">
+              TikTiktoast
+            </span>
           </Link>
           <div className="flex items-center gap-6">
             <Link to="/docs" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
@@ -122,6 +132,8 @@ export default function LandingPage() {
 
         <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-20">
           <div className="text-center max-w-3xl mx-auto">
+            
+
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
