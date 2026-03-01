@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Tiktik } from 'tiktiktoast';
 import { Navbar } from '../components/Navbar';
+import pkg from '../../package.json';
 
 function FloatingToast({ delay, x, y, rotation, type, message }: {
   delay: number; x: number; y: number; rotation: number;
@@ -80,12 +81,12 @@ function InstallSnippet() {
 }
 
 const features = [
-  { icon: '🎯', title: 'Zero Dependencies', desc: 'Pure vanilla JS + TypeScript + WAAPI. Nothing extra.' },
-  { icon: '🏝️', title: 'Dynamic Island Style', desc: 'Pill-to-card morphing transitions with spring physics.' },
-  { icon: '♿', title: 'Accessible', desc: 'ARIA roles, keyboard nav, screen reader support built in.' },
-  { icon: '🔄', title: 'Promise Tracking', desc: 'Loading → Success/Error transitions with one API call.' },
-  { icon: '📱', title: 'SSR Safe', desc: 'Works in Next.js, Nuxt, and any SSR framework.' },
-  { icon: '🎨', title: 'Customizable', desc: 'CSS variables, custom icons, renderers, and more.' },
+  { title: 'Zero Dependencies', desc: 'Pure vanilla JS + TypeScript + WAAPI. Nothing extra.' },
+  { title: 'Dynamic Island Style', desc: 'Pill-to-card morphing transitions with spring physics.' },
+  { title: 'Accessible', desc: 'ARIA roles, keyboard nav, screen reader support built in.' },
+  { title: 'Promise Tracking', desc: 'Loading → Success/Error transitions with one API call.' },
+  { title: 'SSR Safe', desc: 'Works in Next.js, Nuxt, and any SSR framework.' },
+  { title: 'Customizable', desc: 'CSS variables, custom icons, renderers, and more.' },
 ];
 
 export default function LandingPage() {
@@ -222,7 +223,6 @@ export default function LandingPage() {
               className="p-5 rounded-xl border border-border bg-surface-raised
                          hover:border-border-hover transition-all duration-200 group"
             >
-              <span className="text-2xl mb-3 block">{f.icon}</span>
               <h3 className="text-sm font-semibold text-text-primary mb-1 group-hover:text-primary transition-colors">
                 {f.title}
               </h3>
@@ -270,7 +270,7 @@ export default function LandingPage() {
       <footer className="border-t border-border py-8">
         <div className="max-w-[1400px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
-            tiktiktoast v0.1.4 — Zero dependencies, ~5KB gzipped
+            tiktiktoast v{pkg.version} — Zero dependencies, ~5KB gzipped
           </p>
           <div className="flex items-center gap-4">
             <a href="https://www.npmjs.com/package/tiktiktoast" target="_blank" rel="noopener noreferrer"
