@@ -266,7 +266,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Features Grid */}
       <section className="max-w-[1400px] mx-auto px-6 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
