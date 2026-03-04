@@ -186,7 +186,6 @@ export default function LandingPage() {
               SSR-safe, accessible, and around 5KB gzipped.
             </motion.p>
 
-            {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
