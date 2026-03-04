@@ -44,7 +44,6 @@ export default function GettingStarted() {
         </div>
       </section>
 
-      {/* Quick Start */}
       <section className="mb-10">
         <h2 className="text-xl font-semibold text-text-primary mb-4">
           Quick Start
