@@ -1,16 +1,20 @@
-import CodeBlock from '../components/CodeBlock';
+import CodeBlock from "../components/CodeBlock";
 
 export default function GettingStarted() {
   return (
     <div>
-      <h1 className="text-3xl font-bold text-text-primary mb-2">Getting Started</h1>
+      <h1 className="text-3xl font-bold text-text-primary mb-2">
+        Getting Started
+      </h1>
       <p className="text-text-secondary mb-8 leading-relaxed">
-        Get up and running with tiktiktoast in less than a minute. Zero configuration required.
+        Get up and running with tiktiktoast in less than a minute. Zero
+        configuration required.
       </p>
 
-      {/* Installation */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-text-primary mb-4">Installation</h2>
+        <h2 className="text-xl font-semibold text-text-primary mb-4">
+          Installation
+        </h2>
         <p className="text-text-secondary text-sm mb-4">
           Install via your preferred package manager:
         </p>
@@ -21,20 +25,14 @@ export default function GettingStarted() {
             language="bash"
             title="npm"
           />
-          <CodeBlock
-            code="yarn add tiktiktoast"
-            language="bash"
-            title="yarn"
-          />
-          <CodeBlock
-            code="pnpm add tiktiktoast"
-            language="bash"
-            title="pnpm"
-          />
+          <CodeBlock code="yarn add tiktiktoast" language="bash" title="yarn" />
+          <CodeBlock code="pnpm add tiktiktoast" language="bash" title="pnpm" />
         </div>
 
         <div className="mt-6">
-          <h3 className="text-sm font-semibold text-text-primary mb-3">CDN (No Bundler)</h3>
+          <h3 className="text-sm font-semibold text-text-primary mb-3">
+            CDN (No Bundler)
+          </h3>
           <CodeBlock
             code={`<script src="https://unpkg.com/tiktiktoast/dist/tiktik.umd.js"></script>
 <script>
@@ -48,7 +46,9 @@ export default function GettingStarted() {
 
       {/* Quick Start */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-text-primary mb-4">Quick Start</h2>
+        <h2 className="text-xl font-semibold text-text-primary mb-4">
+          Quick Start
+        </h2>
         <p className="text-text-secondary text-sm mb-4">
           Import and call. No providers, wrappers, or configuration needed.
         </p>
@@ -68,10 +68,15 @@ Tiktik.info('New update available.')`}
 
       {/* Full Options */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-text-primary mb-4">Full Options</h2>
+        <h2 className="text-xl font-semibold text-text-primary mb-4">
+          Full Options
+        </h2>
         <p className="text-text-secondary text-sm mb-4">
-          Use <code className="text-primary text-xs bg-primary/10 px-1.5 py-0.5 rounded">showToast()</code> for
-          full control over every parameter:
+          Use{" "}
+          <code className="text-primary text-xs bg-primary/10 px-1.5 py-0.5 rounded">
+            showToast()
+          </code>{" "}
+          for full control over every parameter:
         </p>
 
         <CodeBlock
@@ -93,9 +98,12 @@ Tiktik.info('New update available.')`}
 
       {/* Promise API */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-text-primary mb-4">Promise API</h2>
+        <h2 className="text-xl font-semibold text-text-primary mb-4">
+          Promise API
+        </h2>
         <p className="text-text-secondary text-sm mb-4">
-          Track async operations with automatic loading → success/error transitions:
+          Track async operations with automatic loading → success/error
+          transitions:
         </p>
 
         <CodeBlock
@@ -112,9 +120,12 @@ Tiktik.info('New update available.')`}
 
       {/* Global Configuration */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-text-primary mb-4">Global Configuration</h2>
+        <h2 className="text-xl font-semibold text-text-primary mb-4">
+          Global Configuration
+        </h2>
         <p className="text-text-secondary text-sm mb-4">
-          Set defaults once at the top of your app. SSR-safe — no DOM access at import time.
+          Set defaults once at the top of your app. SSR-safe — no DOM access at
+          import time.
         </p>
 
         <CodeBlock
@@ -131,10 +142,15 @@ Tiktik.info('New update available.')`}
 
       {/* CSS Customization */}
       <section>
-        <h2 className="text-xl font-semibold text-text-primary mb-4">CSS Customization</h2>
+        <h2 className="text-xl font-semibold text-text-primary mb-4">
+          CSS Customization
+        </h2>
         <p className="text-text-secondary text-sm mb-4">
-          Override CSS custom properties on <code className="text-primary text-xs bg-primary/10 px-1.5 py-0.5 rounded">:root</code> to
-          match your brand:
+          Override CSS custom properties on{" "}
+          <code className="text-primary text-xs bg-primary/10 px-1.5 py-0.5 rounded">
+            :root
+          </code>{" "}
+          to match your brand:
         </p>
 
         <CodeBlock
@@ -156,11 +172,14 @@ Tiktik.info('New update available.')`}
       {/* Tip */}
       <div className="mt-10 p-4 rounded-xl border border-primary/20 bg-primary/5">
         <p className="text-sm text-text-secondary">
-          <span className="text-primary font-semibold">💡 Tip:</span>{' '}
-          Check out the{' '}
-          <a href="/docs/components/toast" className="text-primary hover:underline">
+          <span className="text-primary font-semibold">💡 Tip:</span> Check out
+          the{" "}
+          <a
+            href="/docs/components/toast"
+            className="text-primary hover:underline"
+          >
             Toast Component
-          </a>{' '}
+          </a>{" "}
           page for live interactive demos you can try right here in the browser.
         </p>
       </div>
